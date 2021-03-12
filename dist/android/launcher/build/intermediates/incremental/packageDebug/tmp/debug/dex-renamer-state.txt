@@ -1,0 +1,4 @@
+#Fri Mar 12 19:39:12 BRT 2021
+base.0=C\:\\Users\\Dio Lopes\\Downloads\\VRCHAT_AVATARS\\first_game\\dist\\android\\launcher\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

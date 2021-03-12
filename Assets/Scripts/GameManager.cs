@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(SpawnHazards()); 
+         StartCoroutine(SpawnHazards()); 
     }
 
 
@@ -31,13 +31,13 @@ public class GameManager : MonoBehaviour
 
     private GameObject SpawnHazard()
     {
-        var x = Random.Range(-7, 7);
+        var x = Random.Range(-7, 7); 
         var drag = Random.Range(0f, 2f);
 
-        var hazard = Instantiate(hazardPrefab, new Vector3(x, 11, 0), Quaternion.identity);
+        var hazard = Instantiate(hazardPrefab, new Vector3(x, 11, 0), hazardPrefab.transform.rotation);
         hazard.GetComponent<Rigidbody>().drag = drag;
 
-         return hazard; 
+        return hazard; 
     }
 
 }
